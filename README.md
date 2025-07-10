@@ -1,3 +1,13 @@
+
+> [!IMPORTANT]
+> This is a version of the OpenNIC driver with support for  AF_XDP Zero Copy.
+> This driver has been tested with 20.04, and 22.04 with multiple versions of the Linux kernel.
+> 
+> Maintaing a Out of Tree Module (like this) is a Pain In The Neck, as in-kernel API tend to change in name or move between files. If you have problems compiling or using the driver, first look in the Issues/Discussion section of the [official driver](https://github.com/Xilinx/open-nic-driver) where someone may have had your problem. If the problem is specific to the XDP subsystem open an issue here and we'll find a solution together.
+>
+> If in doubt on how to use XDP or AFXDP refer to the almighty [eBPF documentation](https://docs.ebpf.io/).
+> The remaining part of this README is copied verbatim from the official repo and provides a good tutorial on how to install and troubleshoot most driver issues.
+
 # AMD OpenNIC Driver
 
 This is one of the three components of the
@@ -7,10 +17,8 @@ This is one of the three components of the
 
 OpenNIC driver implements a Linux kernel driver for OpenNIC shell.  It supports
 multiple PCI-e PFs with multiple TX/RX queues in each PF, and up to two 100Gbps
-ports on the same card.  As of version 1.0, the driver has not implemented the
-ethtool routines to change the hash key and the indirection table.
+ports on the same card. 
 
-The driver has been tested on under Ubuntu 18.04, 20.04, and 22.04 with multiple versions of the Linux kernel.
 
 ## Building the Driver
 

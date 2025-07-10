@@ -5,7 +5,7 @@
 > 
 > Maintaing a Out of Tree Module (like this) is a Pain In The Neck, as in-kernel API tend to change in name or move between files. If you have problems compiling or using the driver, first look in the Issues/Discussion section of the [official driver](https://github.com/Xilinx/open-nic-driver) where someone may have had your problem. If the problem is specific to the XDP subsystem open an issue here and we'll find a solution together.
 >
-> If in doubt on how to use XDP or AFXDP refer to the almighty [eBPF documentation](https://docs.ebpf.io/).
+> If in doubt on how to use XDP or AF_XDP refer to the almighty [eBPF documentation](https://docs.ebpf.io/).
 > The remaining part of this README is copied verbatim from the official repo and provides a good tutorial on how to install and troubleshoot most driver issues.
 
 # AMD OpenNIC Driver
